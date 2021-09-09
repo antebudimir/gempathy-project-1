@@ -1,0 +1,44 @@
+// Base - global styles
+* {
+	outline: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+html {
+	text-align: center;
+
+	@include respond-to-width(600px) {
+		font-size: 120%;
+	}
+
+	@include respond-to-width(1400px) {
+		font-size: 170%;
+	}
+
+	// @include respond-to-w-and-h(2200px, 1200px) {
+	// 	font-size: 150%;
+	// }
+
+	// @include respond-to-height(2000px) {
+	// 	font-size: 250%;
+	// }
+}
+
+a {
+	display: block;
+	color: $primary-color;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.hidden-visually {
+	@include hidden-visually;
+}

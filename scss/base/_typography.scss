@@ -1,0 +1,85 @@
+// @font-faces:
+@font-face {
+	font-family: 'Tarocco';
+	src: url('../fonts/TaroccoOSF-OT-W01-Smallcaps.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'SnellBT-Regular';
+	src: url('../fonts/SnellBT-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Montserrat ExtraLight';
+	src: url('../fonts/Montserrat-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('../fonts/OpenSans-Regular.woff') format('woff');
+}
+
+// All fonts declared:
+html {
+	font-family: 'SnellBT-Regular';
+}
+
+input,
+select,
+textarea,
+button {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+h1 {
+	font-family: 'Tarocco';
+	font-size: 2rem;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+
+h2 {
+	margin-left: 1rem; // it seems that the SnellBT-Regular font leans a bit on the left side although it's centered. This margin evens it out.
+	padding: 0 1rem;
+	font-size: 2.2rem;
+	font-weight: normal;
+
+	@include respond-to-width(700px) {
+		// font-size: 2.5rem;
+		font-size: 6vw;
+	}
+
+	// @include respond-to-width(1400px) {
+	// 	font-size: 3.5rem;
+	// }
+}
+
+p {
+	font-family: 'Montserrat ExtraLight';
+	font-size: 1rem;
+
+	@include respond-to-width(700px) {
+		font-size: 1.2vw;
+	}
+}
+
+.tagline {
+	font-family: 'SnellBT-Regular';
+	font-size: 2.2rem;
+
+	@include respond-to-width(700px) {
+		// font-size: 2.5rem;
+		font-size: 6vw;
+	}
+
+	// @include respond-to-width(1400px) {
+	// 	font-size: 3.5rem;
+	// }
+}
+
+.buy-link {
+	font-family: 'Montserrat ExtraLight';
+}

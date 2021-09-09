@@ -1,0 +1,18 @@
+// Header
+header {
+	width: auto;
+	height: 22vw;
+	padding: 10% 0 5%;
+	background: url(../img/header-flower.jpg) no-repeat center left/contain;
+}
+
+.logo {
+	width: 9rem;
+	margin: auto;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+		transition: transform 400ms;
+	}
+}

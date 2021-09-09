@@ -1,0 +1,129 @@
+// Sapphire Petal Collection
+#sapphire-petal {
+	& .tagline {
+		margin-top: -1rem;
+	}
+
+	& .buy-link:hover,
+	& .buy-link:focus {
+		background-color: $secondary-color;
+	}
+}
+
+.description {
+	margin: 1rem 0;
+	padding: 0 1rem;
+}
+
+.tagline {
+	padding: 0 1rem;
+}
+
+.buy-link {
+	border: 3px double $secondary-color;
+	width: 11rem;
+	margin: 1rem auto;
+	padding: 0.5rem 0;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	&:hover,
+	&:focus {
+		color: $quinary-color;
+		transition: all 400ms;
+	}
+}
+
+// Green Dream Collection
+#green-dream {
+	& h2 {
+		margin-top: -18%;
+	}
+
+	& .tagline {
+		margin-top: 1rem;
+	}
+
+	& .buy-link {
+		border-color: $tertiary-color;
+	}
+
+	& .buy-link:hover,
+	& .buy-link:focus {
+		background-color: $tertiary-color;
+	}
+}
+
+.flower-ornament {
+	width: 5rem;
+	height: auto;
+	margin: -2rem 0 -12rem auto;
+}
+
+.container {
+	@include respond-to-width(700px) {
+		@include flex-layout(row, nowrap);
+
+		& img {
+			max-width: 50%;
+		}
+	}
+}
+
+.wrapper {
+	& .description {
+		text-align: justify;
+
+		@include respond-to-width(1400px) {
+			padding: 0 6rem;
+		}
+	}
+
+	@include respond-to-width(700px) {
+		@include flex-column-center;
+		margin-top: 2rem;
+	}
+}
+
+// Red Passion Rubies Ring
+#red-passion {
+	margin-top: 2rem;
+
+	& h2 {
+		margin-top: 1rem;
+	}
+
+	& .buy-link {
+		border-color: $quaternary-color;
+	}
+
+	& .buy-link:hover,
+	& .buy-link:focus {
+		background-color: $quaternary-color;
+	}
+
+	& .container img {
+		@include respond-to-width(700px) {
+			order: 2;
+		}
+	}
+}
+
+// Craftsmanship
+#craftsmanship {
+	& h2 {
+		margin: 1rem 0;
+	}
+
+	& .tagline {
+		margin-top: 1rem;
+
+		@include respond-to-width(460px) {
+			margin: -11% 45% 5% 0;
+		}
+
+		@include respond-to-width(700px) {
+			margin: -9% 28% 5% 0;
+		}
+	}
+}

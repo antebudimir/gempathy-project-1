@@ -24,60 +24,53 @@ html {
 	font-family: 'SnellBT-Regular';
 }
 
-input,
-select,
-textarea,
-button {
-	color: inherit;
-	font-family: inherit;
-	font-size: inherit;
-}
-
 h1 {
 	font-family: 'Tarocco';
-	font-size: 2rem;
+	font-size: 1.7rem;
 	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: 8px;
+
+	@include respond-to-width(700px) {
+		font-size: 4vw;
+	}
 }
 
 h2 {
-	margin-left: 1rem; // it seems that the SnellBT-Regular font leans a bit on the left side although it's centered. This margin evens it out.
-	padding: 0 1rem;
+	// SnellBT-Regular font is a handwritten italic and it leans a bit more to the left. Margin is here to center it.
+	margin-left: 1rem;
 	font-size: 2.2rem;
 	font-weight: normal;
+	text-align: center;
 
 	@include respond-to-width(700px) {
-		// font-size: 2.5rem;
 		font-size: 6vw;
 	}
 
-	// @include respond-to-width(1400px) {
-	// 	font-size: 3.5rem;
-	// }
+	@include respond-to-width(1920px) {
+		margin-left: 4rem;
+	}
 }
 
 p {
+	position: relative;
+	z-index: 1;
 	font-family: 'Montserrat ExtraLight';
 	font-size: 1rem;
 
-	@include respond-to-width(700px) {
-		font-size: 1.2vw;
+	@include respond-to-width(1400px) {
+		font-size: 1.5vw;
 	}
 }
 
 .tagline {
+	margin-left: 1rem;
 	font-family: 'SnellBT-Regular';
 	font-size: 2.2rem;
 
 	@include respond-to-width(700px) {
-		// font-size: 2.5rem;
 		font-size: 6vw;
 	}
-
-	// @include respond-to-width(1400px) {
-	// 	font-size: 3.5rem;
-	// }
 }
 
 .buy-link {
